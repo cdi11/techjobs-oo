@@ -22,6 +22,18 @@ public class JobForm {
     @NotNull
     private int employerId;
 
+    @NotNull
+    private String employer;
+
+    @NotNull
+    private String location;
+
+    @NotNull
+    private String CoreCompetencies;
+
+    @NotNull
+    private String PositionTypes;
+
     /*
         TODO #3 - Included other fields needed to create a job,
         with correct validation attributes and display names.
@@ -42,7 +54,9 @@ public class JobForm {
         */
 
         employers = jobData.getEmployers().findAll();
-
+        locations = jobData.getLocations().findAll();
+        coreCompetencies = jobData.getCoreCompetencies().findAll();
+        positionTypes = jobData.getPositionTypes().findAll();
     }
 
     public String getName() {
