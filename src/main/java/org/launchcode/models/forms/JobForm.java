@@ -22,54 +22,36 @@ public class JobForm {
     @NotNull
     private int employerId;
 
-    @NotNull
+    //@NotNull
     private String employer;
 
-    public int getLocationId() {
-        return locationId;
-    }
 
-    public void setLocationId(int locationId) {
-        this.locationId = locationId;
-    }
 
-    @NotNull
+    //@NotNull
     private int locationId;
 
-    @NotNull
+    //@NotNull
     private String location;
 
 
-    public int getCoreComptencyId() {
-        return CoreCompentencyId;
-    }
 
-    public void setCoreCpentencyId(int coreCompentencyId) {
-        CoreCompentencyId = getCoreComptencyId();
-    }
 
-    @NotNull
-    private int CoreCompentencyId;
+    //@NotNull
+    private int coreCompetencyId;
 
 
 
-    @NotNull
+    //@NotNull
     private String CoreCompetencies;
 
 
 
-    @NotNull
+    //@NotNull
     private String PositionTypes;
 
-    public int getPositionTypeId() {
-        return PositionTypeId;
-    }
 
-    public void setPositionTypeId(int positionTypeId) {
-        PositionTypeId = positionTypeId;
-    }
 
-    @NotNull
+    //@NotNull
     private int PositionTypeId;
 
     /*
@@ -129,12 +111,30 @@ public class JobForm {
         this.locations = locations;
     }
 
+    public int getLocationId() {
+        return locationId;
+    }
+
+    public void setLocationId(int locationId) {
+        this.locationId = locationId;
+    }
+
+
+
     public ArrayList<CoreCompetency> getCoreCompetencies() {
         return coreCompetencies;
     }
 
     public void setCoreCompetencies(ArrayList<CoreCompetency> coreCompetencies) {
         this.coreCompetencies = coreCompetencies;
+    }
+
+    public int getCoreCompetencyId() {
+        return coreCompetencyId;
+    }
+
+    public void setCoreCompetencyId(int coreCompetencyId) {
+        this.coreCompetencyId = coreCompetencyId;
     }
 
     public ArrayList<PositionType> getPositionTypes() {
@@ -145,6 +145,12 @@ public class JobForm {
         this.positionTypes = positionTypes;
     }
 
+    public int getPositionTypeId() {
+        return PositionTypeId;
+    }
 
+    public void setPositionTypeId(int positionTypeId) {
+        PositionTypeId = positionTypeId;
+    }
 
 }
